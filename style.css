@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  font-family: Anek Devanagari;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+  margin: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filterContainer #searchBar {
+  padding: 10px 15px;
+  font-family: Anek Devanagari;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  border-radius: 10px;
+  text-align: center;
+}
+
+.filterContainer #searchBar::placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+}
+
+.Characters {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: 40px auto;
+  width: 400px;
+  background-image: linear-gradient(
+    to right,
+    #cd6d7e 0%,
+    #df7588 19%,
+    #c56c7c 60%,
+    #de7588 100%
+  );
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+}
+
+.Characters .imgTest {
+  width: min(130px, 90%);
+  margin: 0 0 10px 0;
+}
